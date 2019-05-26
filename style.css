@@ -1,0 +1,75 @@
+body{
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+
+.main-container{
+	width: 25%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+	background-color: #23036A;
+	padding:30px 0px;
+	margin: 20px 0px 0px 20px;
+}
+
+.main-container .title{
+	width: 100%;
+	color: #CCCCCC;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+.main-container .time-box_wrap {
+	align-self: center;
+	width: 90%;
+	margin: 20px 0px;
+	background: #6200EE;
+	border-radius: 100px;
+	text-align: center;
+}
+
+ .time-box_wrap .time-box_content {
+	display: flex;
+     flex-direction: row;
+     justify-content: space-between;    
+}
+
+.time-box_content .day-n,
+.time-box_content .hour-n,
+.time-box_content .min-n {
+	box-sizing: border-box;
+	width: calc(1/3*100% - (1 - 1/3)*5%); 
+	min-width: 5%;
+	color: #fff;
+	font-size: 40px;
+     font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}	
+
+.main-container .descr-wrap {
+	align-self: center;
+	width: 90%;
+	text-align: center;
+}
+
+.descr-wrap .descr-inner {
+	display: flex;
+     flex-direction: row;
+     justify-content: space-between; 	
+}
+
+
+.descr-inner .descr-day,
+.descr-inner .descr-hour,
+.descr-inner .descr-min {
+	box-sizing: border-box;
+	width: calc(1/3*100% - (1 - 1/3)*5px); 	
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;	
+}
